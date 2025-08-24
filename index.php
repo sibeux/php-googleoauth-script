@@ -27,8 +27,10 @@ $client = new Google_Client();
 $client->setClientId($clientId);
 $client->setClientSecret($clientSecret);
 $client->setRedirectUri('https://sibeux.my.id/cloud-music-player/api/oauth2callback.php');
-$client->addScope("email");
-$client->addScope("profile");
+$client->addScope("https://www.googleapis.com/auth/drive.readonly");
+// Menambahkan parameter lain seperti access_type offline
+$client->setAccessType('offline');
+$client->setIncludeGrantedScopes(true);
 
 ?>
 
