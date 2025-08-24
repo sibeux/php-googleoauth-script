@@ -12,7 +12,7 @@ $clientSecret = null;
 $refreshToken = null;
 
 // Lakukan perulangan pada data yang diberikan
-foreach ($apiData as $item) {
+foreach ($allApiData as $item) {
     if (!isset($item['email']))
         continue;
 
