@@ -9,7 +9,6 @@ $allApiData = ($goauthResponse) ? json_decode($goauthResponse, true) : [];
 
 $clientId = null;
 $clientSecret = null;
-$refreshToken = null;
 
 // Lakukan perulangan pada data yang diberikan
 foreach ($allApiData as $item) {
