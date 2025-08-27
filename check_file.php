@@ -3,7 +3,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new Google_Client();
 // Arahkan ke file kunci JSON Anda
-$client->setAuthConfig('/home/sibs6571/private-key/cybeat-flutter-b4e1ab481e45.json');
+$client->setAuthConfig('/home/sibs6571/private-key/cybeat-music-4d407edfed15.json');
 $client->setScopes(['https://www.googleapis.com/auth/drive.readonly']);
 
 $driveService = new Google_Service_Drive($client);
