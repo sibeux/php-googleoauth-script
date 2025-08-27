@@ -9,7 +9,7 @@ $client->setScopes(['https://www.googleapis.com/auth/drive.readonly']);
 $driveService = new Google_Service_Drive($client);
 
 // Ganti dengan ID file yang tadi Anda share
-$fileId = '12gxEuxgLWD70g9yex7YncZNMaICKMVxq';
+$fileId = '12WBF7qdmdBCY3r5445lg2yBum1f2rJqg';
 
 try {
     $file = $driveService->files->get($fileId, ['fields' => 'id, name']);
